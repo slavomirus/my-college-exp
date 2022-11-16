@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	/*n1 - rzedy 1 biznes
+	n2 - rzedy ekonomiczna
+	k1 - rzedy 2 biznes
+	k2 - rzedy 2 ekonomiczna
+	out - wszystkie możliwe miejsca
+	*/
+	int n1, n2, k1, k2, s;
+	cin>>n1>>n2>>k1>>k2;
+	if (n1>0 && n2>0 && k1>0 && k2>0)
+	{
+		cout<<endl;
+		s = (n1*n2)+(k1*k2);
+		cout<<"liczba wszystkich miejsc to: "<<s<<endl;
+	}
+	else
+	{
+		cout<<"ilosc miejsc nie moze byc ujemna ani zerowa"<<endl;
+	}
+		//cout<<n1<<n2<<k1<<k2;
+	system("pause");
+	return 0;
+}

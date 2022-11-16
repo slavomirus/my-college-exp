@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	float a, b, c;
+	float x;
+	cout<<"podaj kolejno a,b,c"<<endl;
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	
+	if (a != 0.00)
+	{
+		if (b==c)
+		{	
+			cout<<"NWR"<<endl;
+			system("pause");
+			return 0;
+		}
+		else
+			x = (b-c)/a;
+			cout<<"x= "<<x<<endl;
+	}
+	else
+		cout<<"BR"<<endl;
+			
+
+	system("pause");
+	return 0;
+}

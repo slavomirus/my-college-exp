@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	cout<<"podaj liczbe x spelniajac warunek 0<x<50"<<endl;
+	cin>>x;
+	if (x<50 && x>0)
+	{
+		cout<<"h";
+		while(x > 0)
+			{
+			cout<<"e";
+			x = x - 1;
+			}
+		cout<<"j";
+	}
+	else
+	{
+		cout<<"liczba nie spelnia warunku, sproboj jeszcze raz"<<endl;
+	}
+	system("pause");
+	return 0;
+}

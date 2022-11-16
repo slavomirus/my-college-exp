@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	//nie mam pojęcia jakim cudem ten kod działa, ale problem został rozwiązany :> 
+	int t,w,k,wp;
+	int x = 0;
+	cout<<"Ile ramek mam zrobic?"<<endl;
+	cin>>t;
+	for (int i = 0; i<t ; i++)	
+	{
+		cout<<"jak szeroka?"<<endl;
+		cin>>w;
+		wp = w;
+		cout<<"jak wysoka?"<<endl;
+		cin>>k;
+		while (w != 0 && k != 0)
+		{
+			if (wp == w || k - 1 == 0)
+				for (int j = 0; j<w; j++)
+				{
+					cout<<"*";
+				}
+			else
+			{
+				cout<<"*";
+				for(int m = 1; m<w-1; m++)
+				{
+					cout<<".";
+				}
+				cout<<"*";
+
+			}
+			cout<<endl;
+			wp -= 1;
+			k -= 1;
+		}
+	}
+	system("pause");
+	return 0;
+}

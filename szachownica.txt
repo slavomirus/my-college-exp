@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	int a,b,t,m;
+	int x = 0;
+	cout<<"Ile szachownic mam zrobic?"<<endl;
+	cin>>t;
+	for (int i = 0; i<t ; i++)	
+	{
+		cin>>a;
+		cin>>b;
+		x = 0;
+		m = a;
+		while(b!=0)
+		{
+			a = m;
+			while(a!=0)
+			{
+				if(x%2==0)
+					cout<<"*";
+				else
+					cout<<".";
+				a -= 1;
+				x += 1;
+			}
+			b -= 1;
+			cout<<endl;
+		}
+	}
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	//metoda wykładowcy
+	int w, k;
+	cout << "Wprowadz rozmiar ramki(WxK):\n";
+	while(cin>>w>>k)
+	for (int i = 0; j < k; j++)
+	{
+		if (k==1 || w==1) cout<<'*';
+		else
+			if (i % (w - 1) == 0 || j % (k - 1) == 0) cout << '*';
+			else cout << '.';
+	}
+	system("pause");
+	return 0;
+}

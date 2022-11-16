@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x=0,y=0;
+	int i = 0;
+	while (i != 3)
+	{
+	cin>>x;
+	cout<<"----"<<endl;
+		if(x == 42 && y == 42)
+			i += 1;
+	y = x;
+	cout<<x<<endl;
+	if(i == 3)
+	{
+		cout<<"w systemie znalazly się trzy duble 42"<<endl;
+		system("pause");
+		return 0;
+	}
+	}
+}

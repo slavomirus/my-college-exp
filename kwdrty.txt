@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	float a,b,c;
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	float d;
+	d = (b*b) - (4*a*c);
+	if (d >= 0)
+	{
+		if (d==0.00)
+			cout<<"1";
+		else
+		{
+			cout<<"2";
+		}
+	}
+	else
+	{
+		cout<<"0";
+	}
+	
+	system("pause");
+	return 0;
+}

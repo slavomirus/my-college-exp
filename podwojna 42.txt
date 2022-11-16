@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	int i = 0;
+	while (i != 2)
+	{
+	cin>>x;
+	cout<<"----"<<endl;
+		if(x == 42)
+			i += 1;
+		else
+		{
+			i = 0;
+		}
+	cout<<x<<endl;
+	
+	}
+}
